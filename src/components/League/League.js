@@ -16,7 +16,7 @@ const League = (props) => {
     fetch(url)
       .then(res => res.json())
       .then(data => setLeague(data.leagues[0]));
-  }, [])
+  }, [idLeague])
 
   const history = useHistory();
   const setLeagueDetailUrl = (idLeague) => {
