@@ -10,7 +10,7 @@ import femaleImg from '../../Photo/female.png'
 const LeagueDetail = () => {
     const { leagueId } = useParams();
     const [league, setLeague] = useState([]);
-    const { strBanner, dateFirstEvent, strLeagueAlternate, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFaceBook, strYoutube } = league;
+    const { strBanner, dateFirstEvent, strLeagueAlternate, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFacebook, strYoutube } = league;
 
     console.log(league);
     useEffect(() => {
@@ -53,9 +53,9 @@ const LeagueDetail = () => {
                 </div>
             </div><br />
             <div className="text-center">
-                <span><a href=""><FontAwesomeIcon className="fa-2x bg-white rounded p-1 mx-2 mb-5" icon={faTwitter} /></a></span>
-                <span><a href=""><FontAwesomeIcon className="fa-2x bg-white rounded p-1 mx-2 mb-5" icon={faFacebook} /></a></span>
-                <span><a href=""><FontAwesomeIcon className="fa-2x bg-white rounded p-1 mx-2 mb-5" icon={faYoutube} /></a></span>
+                <span><a href={`https://${strTwitter}`}><FontAwesomeIcon className="fa-2x bg-white rounded p-1 mx-2 mb-5" icon={faTwitter} /></a></span>
+                <span><a href={`https://${strFacebook}`}><FontAwesomeIcon className="fa-2x bg-white rounded p-1 mx-2 mb-5" icon={faFacebook} /></a></span>
+                <span><a href={`https://${strYoutube}`}><FontAwesomeIcon className="fa-2x bg-white rounded p-1 mx-2 mb-5" icon={faYoutube} /></a></span>
             </div>
         </div>
     );
