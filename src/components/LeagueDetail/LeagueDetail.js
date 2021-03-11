@@ -18,7 +18,7 @@ const LeagueDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setLeague(data.leagues[0]))
-    }, [])
+    }, [leagueId])
 
     let conditionalImg;
     if (strGender === 'Male') {
