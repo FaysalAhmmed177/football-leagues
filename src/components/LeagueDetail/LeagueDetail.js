@@ -43,7 +43,7 @@ const LeagueDetail = () => {
                         <p>Gender: {strGender}</p>
                     </div>
 
-                    <div className="col-lg-6 col-sm-12">
+                    <div className="col-lg-6  col-sm-12">
                         {conditionalImg}
                     </div>
                 </div>
